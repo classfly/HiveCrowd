@@ -1,0 +1,7 @@
+#pragma once
+
+namespace hiveCrowd
+{
+	#define SAFE_DELETE(vPtr)	   {if (vPtr){ delete   vPtr; vPtr = nullptr; }}
+	#define SAFE_DELETE_ARRAY(vPtr){if (vPtr){ delete[] vPtr; vPtr = nullptr;}}
+}
